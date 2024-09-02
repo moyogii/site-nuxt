@@ -1,25 +1,30 @@
 <template>
   <div class="flex flex-col items-center">
     <section class="mt-12">
-      <LayoutIntroduction/>
+      <LayoutIntroduction />
     </section>
-    <UiMiddleLine/>
+    <UiMiddleLine />
     <section>
-      <LayoutSkills/>
+      <LayoutSkills />
     </section>
-    <UiMiddleLine/>
+    <UiMiddleLine />
     <section>
-      <LayoutExperience/>
+      <LayoutExperience />
     </section>
-    <UiMiddleLine/>
+    <UiMiddleLine />
     <section>
-      <LayoutProjects/>
+      <LayoutProjects />
     </section>
   </div>
   <footer class="flex flex-col items-center">
-    <p class="text-gray-600">© 2024 Moyogii. All Rights Reserved.</p>
+    <p class="text-gray-600">
+      Copyright &copy; 2024 Moyogii. All rights reserved.
+    </p>
     <div>
-      <p class="text-gray-600">Inquires can be sent to <a href="mailto:me@moyogi.dev" class="text-[#3C8BC4]">me@moyogi.dev</a></p>
+      <p class="text-gray-600">
+        Inquiries can be sent to
+        <a href="mailto:me@moyogi.dev" class="text-[#3C8BC4]">me@moyogi.dev</a>
+      </p>
     </div>
   </footer>
 </template>
