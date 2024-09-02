@@ -1,10 +1,20 @@
 <template>
   <div class="flex flex-col items-center">
-    <div class="mt-12">
-      <introduction/>
-    </div>
-    <middle-line/>
-    <skills/>
+    <section class="mt-12">
+      <LayoutIntroduction/>
+    </section>
+    <UiMiddleLine/>
+    <section>
+      <LayoutSkills/>
+    </section>
+    <UiMiddleLine/>
+    <section>
+      <LayoutExperience/>
+    </section>
+    <UiMiddleLine/>
+    <section>
+      <LayoutProjects/>
+    </section>
   </div>
 </template>
 
