@@ -16,6 +16,12 @@
       <LayoutProjects/>
     </section>
   </div>
+  <footer class="flex flex-col items-center">
+    <p class="text-gray-600">© 2024 Moyogii. All Rights Reserved.</p>
+    <div>
+      <p class="text-gray-600">Inquires can be sent to <a href="mailto:me@moyogi.dev" class="text-[#3C8BC4]">me@moyogi.dev</a></p>
+    </div>
+  </footer>
 </template>
 
 <script lang="ts" setup>
