@@ -2,7 +2,7 @@
   <div data-aos="fade-up" class="relative flex rounded-md overflow-hidden no-underline shadow-lg h-full">
     <div class="bg-[#1b1c27] h-full">
       <a v-if="resolvedImage" :href="website">
-        <img class="w-full h-2/3" :src="resolvedImage" :alt="title + ' image'">
+        <img :class="resolvedImageClass" :src="resolvedImage" :alt="title + ' image'">
       </a>
       <div class="text-left p-6">
         <a :href="website">
@@ -29,6 +29,7 @@ const props = defineProps<{
   description: string
   website: string
   image?: string
+  imageSize?: string
   tags?: ProjectTag[]
 }>()
 
@@ -40,6 +41,24 @@ const images = Object.fromEntries(
 const resolvedImage = computed(() => {
   return props.image ? images[props.image] : undefined;
 });
+
+function imageSizeToComponentSize(sizeName: string) {
+  switch(sizeName) {
+    case 'lg':
+      return 'w-full lg:h-2/3 sm:h-1/2';
+    case 'md':
+      return 'w-full lg:h-1/2 sm:1/4';
+    case 'sm':
+      return 'w-full h-1/4';
+    default:
+      return 'w-full h-1/2';
+  }
+}
+
+const resolvedImageClass = computed(() => {
+  return imageSizeToComponentSize(props.imageSize || 'medium');
+});
+
 </script>
 
 <style>

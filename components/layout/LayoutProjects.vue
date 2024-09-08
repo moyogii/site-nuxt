@@ -2,7 +2,7 @@
   <section class="flex justify-center py-5 bg-[#14151d]">
     <div data-aos="fade-u" class="container mx-auto text-center">
       <h3 class="text-[#3C8BC4] font-semibold text-3xl">Projects</h3>
-      <div class="grid grid-cols-3 sm:grid-cols-2 gap-4 my-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 my-4">
         <UiProjectCard
         v-for="project in experience"
         :title="project.title"
@@ -34,7 +34,7 @@ const experience = reactive<Project[]>([
   {
     title: 'Project: Synapse',
     description: "Project: Synapse is a online game mod for Garry's Mod that takes the best from the Half-Life franchise and creates a one of a kind experience for players.",
-    website: 'https://www.monolithservers.com/',
+    website: 'https://project-synapse.com',
     image: 'synapse',
     tags: [
       {

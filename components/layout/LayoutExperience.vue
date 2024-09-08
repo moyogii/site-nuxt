@@ -2,13 +2,14 @@
   <section class="flex justify-center py-5 bg-[#14151d]">
     <div data-aos="fade-u" class="container mx-auto text-center">
       <h3 class="text-[#3C8BC4] font-semibold text-3xl">Professional Experience</h3>
-      <div class="grid grid-cols-3 sm:grid-cols-2 gap-4 my-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
         <UiProjectCard
         v-for="project in experience"
         :title="project.title"
         :description="project.description"
         :website="project.website"
         :image="project.image"
+        :imageSize="project.imageSize"
         :tags="project.tags"
         />
       </div>
@@ -25,6 +26,7 @@ const experience = reactive<Project[]>([
     description: 'A software company focused on creating innovative games and experiences on creator platforms.',
     website: 'https://www.thrivingventures.com/',
     image: 'thrivingventures',
+    imageSize: 'lg',
     tags: [
       {
         content: 'Software Engineer'
@@ -39,6 +41,7 @@ const experience = reactive<Project[]>([
     description: 'Play with your friends, or find friends. Join our casual-competitive community today, primarily focused on CS2 and gaming. Spectre has a little bit of everything for your next adventure.',
     website: 'https://spectre.gg/',
     image: 'spectresystems',
+    imageSize: 'lg',
     tags: [
       {
         content: 'Software Engineer',

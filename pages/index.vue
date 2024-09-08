@@ -22,7 +22,11 @@
     </p>
     <div>
       <p class="text-gray-600">
-        Inquiries can be sent to
+        Made using
+            <a href="https://vuejs.org/" class="hover:text-green-400">
+              <font-awesome :icon="['fab', 'vuejs']" />
+            </a>
+          | Business Inquiries at 
         <a href="mailto:me@moyogi.dev" class="text-[#3C8BC4]">me@moyogi.dev</a>
       </p>
     </div>

@@ -7,5 +7,6 @@ export interface Project {
     description: string;
     website: string;
     image?: string;
+    imageSize?: string;
     tags?: ProjectTag[];
 }
